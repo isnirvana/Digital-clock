@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-section">
+        <img src="clock-regular.svg" alt="time" />
+        <h3>Clock Master</h3>
+      </div>
+      <div class="middle-section">
+        <div class="date">
+          <h4 id="current-day"></h4>
+          <h4 id="current-date"></h4>
+        </div>
+        <div class="time">
+          <h1 id="current-time">
+            <span class="hour">00</span>:<span class="minute">00</span>
+          </h1>
+          <div>
+            <h3 id="seconds">00</h3>
+            <h3 id="am-or-pm">AM</h3>
+          </div>
+        </div>
+      </div>
+      <div class="down-section">
+        <span id="twelve-hours" class="show">12hr</span>
+        <span id="twenty-four-hours">24hr</span>
+      </div>
+    </div>
+  </body>
+</html>
