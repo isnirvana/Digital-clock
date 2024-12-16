@@ -32,13 +32,17 @@ const months = [
   "December",
 ]
 
-let day = new Date().getDay()
-let month = new Date().getMonth()
-let year = new Date().getFullYear()
-let date = new Date().getDate()
+const now = new Date
+
+let day = now.getDay()
+let month = now.getMonth()
+let year = now.getFullYear()
+let date = now.getDate()
 
 currentDay.textContent = days[day]
-currentDate.textContent = `${date}th ${months[month]} ${year}`
+currentDate.textContent = `${date}${getDateSuffix(date)} ${
+  months[month]
+} ${year}`
 console.log(day)
 
 downSection.addEventListener("click", (e) => {
@@ -91,4 +95,11 @@ function getTime() {
   seconds.textContent = second
   minutes.textContent = minute
   hours.textContent = hour
+}
+
+function getDateSuffix(date) {
+  if (date % 10 === 1 && date !== 11) return "st"
+  if (date % 10 === 2 && date !== 12) return "nd"
+  if (date % 10 === 3 && date !== 13) return "rd"
+  return "th"
 }
