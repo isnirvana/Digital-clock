@@ -1,7 +1,3 @@
-Here’s a well-structured `README.md` tailored for your clock project:
-
----
-
 # Clock Master ⏰
 
 A dynamic and interactive clock web application that displays the current time, date, and day. Users can toggle between 12-hour and 24-hour formats seamlessly.
